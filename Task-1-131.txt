@@ -13,3 +13,4 @@ Line 16-18 in globalInventoryData and Line 80, 85, 87, 91, 93 in inventorySystem
 Line 78-98, Switch Statements, handling this logic with switch statement is a bad practice and should be replaced by some form of abstraction for better maintainability in the future.
 
 
+Line 106, 114, 124, Message Chaining, In the inventorySystem class these codes promote message chaining with the use of globalInventoryData class which makes the code tightly coupled and difficult to work with in the future.
