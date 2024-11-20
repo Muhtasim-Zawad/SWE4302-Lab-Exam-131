@@ -2,10 +2,6 @@ import java.util.List;
 import java.util.Arrays;
 
 public class IceCreamFactory {
-   /* private final List<IceCreamFlavor> availableFlavors;
-    private final List<IceCreamTopping> availableToppings;*/
-
-
     private final List<IceCreamFlavor> availableFlavors = Arrays.asList(
                 new IceCreamFlavor("Mint Chocolate Chip", 2.80),
                 new IceCreamFlavor("Chocolate Fudge", 3.00),

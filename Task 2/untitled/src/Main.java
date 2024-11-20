@@ -4,8 +4,6 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         IceCreamFactory factory = new IceCreamFactory();
-
-
         Order order = new Order("waffle cone");
 
 
@@ -17,7 +15,7 @@ public class Main {
         System.out.println("Tax: $" + order.calculateTax());
         System.out.println("Total: $" + order.calculateTotal());
 
-        // Generate invoice
+        // Invoice
         InvoiceGenerator.generateInvoice(order, "invoice.txt");
     }
 }
