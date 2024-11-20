@@ -6,10 +6,12 @@ public class Order {
         private final String container;
         private final double containerPrice;
         private static final double TAX_RATE = 0.08;
+        private static final double WAFFLE_CONE_PRICE = 5.00;
+        private static final double PAPER_CUP_PRICE = 0.00;
 
         public Order(String container) {
             this.container = container.toLowerCase();
-            this.containerPrice = container.equals("waffle cone") ? 5.00 : 0.00;
+            this.containerPrice = container.equals("waffle cone") ? WAFFLE_CONE_PRICE : PAPER_CUP_PRICE;
         }
 
         public void addItem(OrderItem item) {
