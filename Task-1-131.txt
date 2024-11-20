@@ -1,0 +1,15 @@
+Line 6-198, Large Class, inventorySystem class handles too many responsibilities like product management, order processing, discount calculations, and report generation. These responsibilities could be broken into smaller classes.
+
+
+Line 85,87,91, Magic Numbers, The calculateFinalPrice method in inventorySystem class contains hard-coded values that make the code readability and comprehensibility worse. These could be replaced by defined constants.
+
+
+Line 10-37, Nested Classes, In inventorySystem class there are the Product and Order classes of which Order class has another nested class named OrderItem. These are all unnecessary and makes the code unreadable and difficult to maintain.
+
+
+Line 16-18 in globalInventoryData and Line 80, 85, 87, 91, 93 in inventorySystem, Duplicated Logic, The logic for calculating discount appears multiple times in these parts which is unnecessary.
+
+
+Line 78-98, Switch Statements, handling this logic with switch statement is a bad practice and should be replaced by some form of abstraction for better maintainability in the future.
+
+
