@@ -10,15 +10,7 @@ class OrderTest {
         Order order = new Order("waffle cone");
 
         order.addItem(factory.createOrderItem("Chocolate Fudge", 1, "Chocolate Chips", 1));
-        
-    }
-
-    @Test
-    void calculateTax() {
-    }
-
-    @Test
-    void calculateTotal() {
+        assertEquals(8.50, order.calculateSubtotal());
     }
 
     @Test
